@@ -11,7 +11,7 @@ namespace CoreDemo.Controllers
         {
             var values = cm.ListAllCategory();
 
-            return View();
+            return View(values);
         }
     }
 }
