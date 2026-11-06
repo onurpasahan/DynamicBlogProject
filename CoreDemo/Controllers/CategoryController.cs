@@ -2,16 +2,16 @@
 using DataAccessLayer.Concrete.EntityFramework;
 using Microsoft.AspNetCore.Mvc;
 
-namespace CoreDemo.Controllers
+namespace DynamicBlogProject.Controllers
 {
-    public class Category : Controller
+    public class CategoryController : Controller
     {
         CategoryManager cm = new CategoryManager(new EfCategoryRepository());
         public IActionResult Index()
         {
             var values = cm.ListAllCategory();
 
-            return View(values);
+            return View("~/Views/Shared/CategoryList.cshtml", values);
         }
     }
 }

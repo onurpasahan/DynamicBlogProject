@@ -2,7 +2,7 @@ using System.Diagnostics;
 using CoreDemo.Models;
 using Microsoft.AspNetCore.Mvc;
 
-namespace CoreDemo.Controllers
+namespace DynamicBlogProject.Controllers
 {
     public class HomeController : Controller
     {
